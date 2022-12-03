@@ -1,1 +1,41 @@
 //hello word
+
+//step 1 
+    public int contadorDigitos(int numero)
+    {
+        int  res = 0;
+
+        if(numero< 10)
+        {
+            res = 1;
+        }
+        else
+        {
+            res = contadorDigitos(numero/10) + 1;
+
+        }
+
+        return res;
+
+    }
+
+//step 2
+
+public static int sumaDigits(int number, int index )
+    {
+        int resp = 0;
+
+        if (number < 10 && index == 1)
+        {
+            resp = - 1 * (number);
+        }
+        else
+        {
+            if (index % 2 == 0 )
+                resp = (number % 10 ) + sumaDigits(number/10, index - 1);
+            else
+                resp = -(number % 10 ) + sumaDigits(number/10, index - 1);
+        }
+
+        return resp;
+    }
