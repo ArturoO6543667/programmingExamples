@@ -47,3 +47,26 @@ public static int sumaDigits(int number, int index )
 
 
 //step 3 
+
+public static int  esSiames(int numero, int index) // 456456 ; index = numero digitos
+    {
+        int suma1 = 0  , suma2 = 0;
+
+        if (index == 1)
+        {
+            return numero;
+        }
+        else {
+            if (index % 2 == 0)
+            {
+                suma1 = numero % 10 + (esSiames(numero/10, index-1  ));
+                
+            }
+            else
+            {
+                suma2 = numero % 10 + (esSiames(numero/10, index-1 ));
+               
+            }
+        }
+        // si suma1 == suma 2 es siames....
+    }
