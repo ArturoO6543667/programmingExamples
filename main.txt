@@ -47,7 +47,7 @@ public static int sumaDigits(int number, int index )
 
 
 //step 3 
-
+//index = par
 public static int  esSiames(int numero, int index) // 456456 ; index = numero digitos
     {
         int suma1 = 0  , suma2 = 0;
