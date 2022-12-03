@@ -21,6 +21,11 @@
 
 //step 2
 
+  public static void main(String[] args) {
+        int resp = sumDigits(1235, digitCounter(1235)); // otra funcion recursiva
+        System.out.println(resp);
+    }
+
 public static int sumaDigits(int number, int index )
     {
         int resp = 0;
@@ -39,3 +44,6 @@ public static int sumaDigits(int number, int index )
 
         return resp;
     }
+
+
+//step 3 
